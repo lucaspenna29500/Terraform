@@ -1,0 +1,9 @@
+# TP Terraform - Atelier 1
+
+## Réponses aux questions
+- **Init :** Téléchargement des providers `random` et `local`. Backend initialisé en local.
+- **Système de fichiers :** Création de `.terraform/` et `.terraform.lock.hcl`.
+- **Plan :** Affiche `(known after apply)` car la valeur aléatoire n'est générée qu'à l'exécution.
+- **State :** Les infos sont dans `terraform.tfstate`.
+- **Dépendance :** Le fichier `local_file` dépend de `random_string`.
+- **Modif 20 caractères :** Terraform détruit la chaîne de 16 et en crée une de 20 (Replacement).
